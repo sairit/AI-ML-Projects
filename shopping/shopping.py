@@ -25,6 +25,7 @@ def main():
     sensitivity, specificity = evaluate(y_test, predictions)
 
     # Print results
+    print("_____RESULTS_____\n")
     print(f"Correct: {(y_test == predictions).sum()}")
     print(f"Incorrect: {(y_test != predictions).sum()}")
     print(f"True Positive Rate: {100 * sensitivity:.2f}%")
